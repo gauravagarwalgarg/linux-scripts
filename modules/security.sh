@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # =============================================================================
-# Module: Security — Firewall, intrusion detection, SSH hardening
+# Module: Security Firewall, intrusion detection, SSH hardening
 # =============================================================================
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"

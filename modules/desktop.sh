@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # =============================================================================
-# Module: Desktop — GNOME tweaks, productivity apps, theming
+# Module: Desktop GNOME tweaks, productivity apps, theming
 # =============================================================================
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"

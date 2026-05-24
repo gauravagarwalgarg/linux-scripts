@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # =============================================================================
-# Common utilities — logging, distro detection, safety checks
+# Common utilities logging, distro detection, safety checks
 # =============================================================================
 
 set -euo pipefail
@@ -34,7 +34,7 @@ detect_distro() {
 
   if [[ "$DISTRO_ID" != "ubuntu" ]]; then
     warn "This script is designed for Ubuntu. Detected: $DISTRO_NAME"
-    warn "Proceeding anyway — some packages may not be available."
+    warn "Proceeding anyway some packages may not be available."
   fi
 
   info "Detected: $DISTRO_NAME"

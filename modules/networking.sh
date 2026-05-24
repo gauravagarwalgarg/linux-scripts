@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # =============================================================================
-# Module: Networking — Net tools, Wireshark, VPN, DNS utilities
+# Module: Networking Net tools, Wireshark, VPN, DNS utilities
 # =============================================================================
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"

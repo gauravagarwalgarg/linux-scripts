@@ -186,7 +186,7 @@ base ← (required by all other modules)
   └── networking
 ```
 
-All modules source `lib/common.sh` for logging and `lib/packages.sh` for package lists. Each module is idempotent — safe to run multiple times.
+All modules source `lib/common.sh` for logging and `lib/packages.sh` for package lists. Each module is idempotent safe to run multiple times.
 
 ---
 

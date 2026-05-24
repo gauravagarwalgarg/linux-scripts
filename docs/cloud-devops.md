@@ -8,7 +8,7 @@
 
 | Tool | Purpose | Local Equivalent |
 |------|---------|-----------------|
-| Docker | Container runtime | — (it IS the local equivalent) |
+| Docker | Container runtime | (it IS the local equivalent) |
 | kubectl | Kubernetes CLI | Talks to Minikube/kind locally |
 | Helm | K8s package manager | Deploy charts to local cluster |
 | k9s | Kubernetes TUI | Monitor local/remote clusters |
@@ -21,7 +21,7 @@
 
 ---
 
-## 🐳 Docker — The Foundation
+## 🐳 Docker The Foundation
 
 Everything in cloud-native starts with containers.
 
@@ -44,7 +44,7 @@ docker logs -f web
 docker system prune -af --volumes
 ```
 
-### Docker Compose — Multi-Container Apps
+### Docker Compose Multi-Container Apps
 
 ```yaml
 # docker-compose.yml
@@ -76,11 +76,11 @@ docker compose down -v    # Stop and remove volumes
 ```
 
 ### Anecdote
-> *"Before Docker, 'works on my machine' was a meme. Now it's a guarantee — if it runs in the container, it runs everywhere. The first time I shipped a multi-service app with `docker compose up` and it just worked in CI, I understood why containers won."*
+> *"Before Docker, 'works on my machine' was a meme. Now it's a guarantee if it runs in the container, it runs everywhere. The first time I shipped a multi-service app with `docker compose up` and it just worked in CI, I understood why containers won."*
 
 ---
 
-## ☸️ Kubernetes — Locally
+## ☸️ Kubernetes Locally
 
 ### Minikube (Single-Node Cluster)
 
@@ -103,7 +103,7 @@ minikube stop
 minikube delete
 ```
 
-### kind (Kubernetes in Docker) — Lighter Alternative
+### kind (Kubernetes in Docker) Lighter Alternative
 
 ```bash
 # Install
@@ -119,7 +119,7 @@ kind load docker-image myapp:latest --name dev
 kind delete cluster --name dev
 ```
 
-### k9s — The Kubernetes TUI
+### k9s The Kubernetes TUI
 
 ```bash
 k9s
@@ -140,7 +140,7 @@ k9s
 
 ---
 
-## 🏗️ Terraform — Infrastructure as Code
+## 🏗️ Terraform Infrastructure as Code
 
 ### Local Development with LocalStack
 
@@ -199,7 +199,7 @@ resource "aws_dynamodb_table" "users" {
 terraform init
 terraform plan
 terraform apply -auto-approve
-# All resources created locally — no AWS bill
+# All resources created locally no AWS bill
 ```
 
 ### Anecdote
@@ -237,7 +237,7 @@ functions-framework --target=my_function --debug
 
 ---
 
-## 📦 Helm — Kubernetes Package Manager
+## 📦 Helm Kubernetes Package Manager
 
 ```bash
 # Add a chart repository

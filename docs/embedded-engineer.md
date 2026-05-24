@@ -1,6 +1,6 @@
 # 🔌 Embedded Engineer Tooling Guide
 
-> Everything you need to go from bare silicon to shipping firmware — on Ubuntu.
+> Everything you need to go from bare silicon to shipping firmware on Ubuntu.
 
 ---
 
@@ -43,11 +43,11 @@ The `embedded` module installs a complete embedded development environment:
 
 ---
 
-## 🏗️ Yocto Project — Building Custom Linux
+## 🏗️ Yocto Project Building Custom Linux
 
 ### What is Yocto?
 
-Yocto builds a complete Linux distribution from source — kernel, rootfs, packages, everything — tailored to your hardware. It's how companies like Tesla, John Deere, and every automotive OEM build their embedded Linux.
+Yocto builds a complete Linux distribution from source kernel, rootfs, packages, everything tailored to your hardware. It's how companies like Tesla, John Deere, and every automotive OEM build their embedded Linux.
 
 ### Prerequisites (installed by this module)
 
@@ -100,7 +100,7 @@ oe-pkgdata-util find-path /usr/bin/something
 
 ---
 
-## 🔧 Buildroot — The Lighter Alternative
+## 🔧 Buildroot The Lighter Alternative
 
 When Yocto is overkill (small systems, quick prototypes):
 
@@ -163,7 +163,7 @@ ls -la /dev/ttyUSB0
 ```
 
 ### Anecdote
-> *"I once spent an hour debugging why my serial output was garbage. Baud rate was right, wiring was right. Turns out I had flow control enabled in minicom and the target didn't support it. picocom doesn't have this problem — it defaults to no flow control. Keep it simple."*
+> *"I once spent an hour debugging why my serial output was garbage. Baud rate was right, wiring was right. Turns out I had flow control enabled in minicom and the target didn't support it. picocom doesn't have this problem it defaults to no flow control. Keep it simple."*
 
 ---
 
@@ -209,7 +209,7 @@ monitor flash write_image erase firmware.bin 0x08000000  # Flash binary
 
 ---
 
-## 🖥️ QEMU — Test Without Hardware
+## 🖥️ QEMU Test Without Hardware
 
 ### Emulate Cortex-M (STM32-like)
 
@@ -238,7 +238,7 @@ qemu-system-aarch64 \
 ```
 
 ### Anecdote
-> *"QEMU saved me when the hardware prototype was delayed by 3 weeks. I developed and tested the entire application layer in QEMU, and when the boards arrived, it booted first try. Emulation isn't a substitute for hardware — but it's a force multiplier."*
+> *"QEMU saved me when the hardware prototype was delayed by 3 weeks. I developed and tested the entire application layer in QEMU, and when the boards arrived, it booted first try. Emulation isn't a substitute for hardware but it's a force multiplier."*
 
 ---
 

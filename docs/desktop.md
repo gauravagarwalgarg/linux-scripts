@@ -155,14 +155,14 @@ gsettings set org.gnome.desktop.interface cursor-theme 'Breeze_Snow'
 ## 🔋 Power Management (Laptops)
 
 ```bash
-# TLP — advanced power management
+# TLP advanced power management
 sudo apt install tlp tlp-rdw
 sudo systemctl enable tlp
 
 # Check battery status
 tlp-stat -b
 
-# Powertop — analyze power usage
+# Powertop analyze power usage
 sudo apt install powertop
 sudo powertop --auto-tune
 ```
@@ -171,7 +171,7 @@ sudo powertop --auto-tune
 
 ## Anecdote
 
-> *"I used to spend hours theming my desktop — custom icons, animated wallpapers, conky widgets. Then I realized: the best desktop is one you never see because you're always in a terminal or editor. Now I run stock GNOME dark mode with one extension (Dash to Dock) and spend my time writing code instead of ricing."*
+> *"I used to spend hours theming my desktop custom icons, animated wallpapers, conky widgets. Then I realized: the best desktop is one you never see because you're always in a terminal or editor. Now I run stock GNOME dark mode with one extension (Dash to Dock) and spend my time writing code instead of ricing."*
 
 ---
 

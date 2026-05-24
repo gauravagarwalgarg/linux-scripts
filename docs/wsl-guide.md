@@ -1,4 +1,4 @@
-# 🪟 WSL Guide — Ubuntu on Windows, Done Right
+# 🪟 WSL Guide Ubuntu on Windows, Done Right
 
 > The best of both worlds: Windows for hardware/drivers/Office, Linux for development. No dual-boot, no VM overhead.
 
@@ -15,7 +15,7 @@
 | USB passthrough | Full | Requires config | USB/IP supported |
 | Windows integration | None | Clipboard only | Full (file access, networking) |
 
-**WSL2 gives you a real Linux kernel** — not emulation, not translation. It's a lightweight VM managed by Windows that starts instantly and shares resources dynamically.
+**WSL2 gives you a real Linux kernel** not emulation, not translation. It's a lightweight VM managed by Windows that starts instantly and shares resources dynamically.
 
 ---
 
@@ -101,7 +101,7 @@ wsl --shutdown
 
 ---
 
-## 📁 File System — The Golden Rule
+## 📁 File System The Golden Rule
 
 > **Never cross the boundary for heavy I/O.**
 
@@ -164,12 +164,12 @@ WSL2 doesn't natively see USB devices. Use `usbipd-win`:
 ### Setup
 
 ```powershell
-# PowerShell (Admin) — Install on Windows
+# PowerShell (Admin) Install on Windows
 winget install usbipd
 ```
 
 ```bash
-# Inside WSL — Install client
+# Inside WSL Install client
 sudo apt install linux-tools-generic hwdata
 sudo update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/*-generic/usbip 20
 ```
@@ -196,7 +196,7 @@ minicom -D /dev/ttyUSB0 -b 115200
 ```
 
 ### Anecdote
-> *"The first time I flashed an STM32 from WSL via OpenOCD with USB passthrough, I felt like I'd cheated the system. Full embedded development workflow — no Linux partition, no VM, no rebooting. Just Windows Terminal + WSL."*
+> *"The first time I flashed an STM32 from WSL via OpenOCD with USB passthrough, I felt like I'd cheated the system. Full embedded development workflow no Linux partition, no VM, no rebooting. Just Windows Terminal + WSL."*
 
 ---
 
@@ -205,7 +205,7 @@ minicom -D /dev/ttyUSB0 -b 115200
 WSL2 supports Linux GUI apps natively (WSLg):
 
 ```bash
-# These just work — they open as Windows windows
+# These just work they open as Windows windows
 firefox &
 nautilus &
 code .          # VS Code (installs Remote-WSL automatically)
@@ -344,12 +344,12 @@ wsl --import Ubuntu-Dev C:\WSL\Ubuntu-Dev D:\Backups\ubuntu-dev-2024.tar
 
 ## ⚡ Performance Tips
 
-1. **Keep source code in `~/`** — never in `/mnt/c/`
-2. **Use `appendWindowsPath=false`** — removes 200+ Windows PATH entries from Linux
-3. **Set memory limits** — prevents WSL from eating all RAM
-4. **Enable `autoMemoryReclaim`** — returns unused pages to Windows
-5. **Use `sparseVhd`** — disk grows/shrinks dynamically
-6. **Disable Windows Defender scanning of WSL** — add `\\wsl$` to exclusions
+1. **Keep source code in `~/`** never in `/mnt/c/`
+2. **Use `appendWindowsPath=false`** removes 200+ Windows PATH entries from Linux
+3. **Set memory limits** prevents WSL from eating all RAM
+4. **Enable `autoMemoryReclaim`** returns unused pages to Windows
+5. **Use `sparseVhd`** disk grows/shrinks dynamically
+6. **Disable Windows Defender scanning of WSL** add `\\wsl$` to exclusions
 
 ### Add WSL Exclusion to Windows Defender
 
@@ -365,12 +365,12 @@ This alone can **2-3x** your build speeds.
 
 ## 🎯 Why WSL + Ubuntu Specifically?
 
-1. **Microsoft co-develops WSL with Canonical** — Ubuntu is the reference distro
-2. **First to get new WSL features** — systemd, GUI apps, USB passthrough all tested on Ubuntu first
-3. **Cloud parity** — your WSL Ubuntu matches your CI/CD Ubuntu matches your production Ubuntu
-4. **Embedded vendor support** — TI, NXP, Xilinx all document Ubuntu. Your WSL matches their docs exactly
-5. **One environment everywhere** — same `.bashrc`, same tools, same scripts, laptop to cloud
+1. **Microsoft co-develops WSL with Canonical** Ubuntu is the reference distro
+2. **First to get new WSL features** systemd, GUI apps, USB passthrough all tested on Ubuntu first
+3. **Cloud parity** your WSL Ubuntu matches your CI/CD Ubuntu matches your production Ubuntu
+4. **Embedded vendor support** TI, NXP, Xilinx all document Ubuntu. Your WSL matches their docs exactly
+5. **One environment everywhere** same `.bashrc`, same tools, same scripts, laptop to cloud
 
 ---
 
-*"WSL isn't Linux pretending to be Windows. It's Linux living inside Windows. The distinction matters — it's a real kernel, real ext4, real syscalls. It just happens to share a desktop with Outlook."*
+*"WSL isn't Linux pretending to be Windows. It's Linux living inside Windows. The distinction matters it's a real kernel, real ext4, real syscalls. It just happens to share a desktop with Outlook."*

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # =============================================================================
-# Module: Dev Tools — Compilers, build systems, language runtimes, CLI tools
+# Module: Dev Tools Compilers, build systems, language runtimes, CLI tools
 # =============================================================================
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"

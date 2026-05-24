@@ -55,7 +55,7 @@ CLOUD_PACKAGES=(
   # Container runtime
   docker.io docker-compose
   # Kubernetes tools (installed via script, not apt)
-  # kubectl, helm, k9s — handled separately
+  # kubectl, helm, k9s handled separately
   # Infrastructure
   ansible
   # Utilities

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # =============================================================================
-# Module: Embedded — Cross-compilers, Yocto deps, JTAG, serial, QEMU
+# Module: Embedded Cross-compilers, Yocto deps, JTAG, serial, QEMU
 # =============================================================================
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"

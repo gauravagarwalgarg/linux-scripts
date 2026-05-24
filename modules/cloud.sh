@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # =============================================================================
-# Module: Cloud — Docker, Kubernetes, Terraform, AWS/GCP CLI, local dev tools
+# Module: Cloud Docker, Kubernetes, Terraform, AWS/GCP CLI, local dev tools
 # =============================================================================
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
