@@ -1,0 +1,16 @@
+site_name: Linux Scripts
+site_url: https://gauravagarwalgarg.github.io/linux-scripts/
+repo_url: https://github.com/GauravAgarwalGarg/linux-scripts
+theme:
+  name: material
+  palette:
+    - scheme: slate
+  features:
+    - navigation.sections
+    - content.code.copy
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - tables
+  - toc:
+      permalink: true
