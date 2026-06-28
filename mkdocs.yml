@@ -1,16 +1,37 @@
 site_name: Linux Scripts
+site_description: Modular Linux setup scripts and guides
 site_url: https://gauravagarwalgarg.github.io/linux-scripts/
 repo_url: https://github.com/GauravAgarwalGarg/linux-scripts
+repo_name: GauravAgarwalGarg/linux-scripts
+
 theme:
   name: material
   palette:
     - scheme: slate
+      primary: green
+      accent: lime
   features:
+    - navigation.tabs
     - navigation.sections
     - content.code.copy
+    - search.suggest
+  icon:
+    repo: fontawesome/brands/github
+
 markdown_extensions:
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      anchor_linenums: true
   - pymdownx.superfences
+  - admonition
   - tables
   - toc:
       permalink: true
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+  - WSL Guide: wsl-guide.md
+  - Desktop: desktop.md
+  - Cloud & DevOps: cloud-devops.md
+  - Embedded Engineer: embedded-engineer.md
+  - Distro Journey: distro-journey.md
