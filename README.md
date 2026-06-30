@@ -1,5 +1,12 @@
 # 🐧 Linux Scripts
 
+[![CI](https://github.com/gauravagarwalgarg/linux-scripts/actions/workflows/ci.yml/badge.svg)](https://github.com/gauravagarwalgarg/linux-scripts/actions/workflows/ci.yml) [![Docs](https://img.shields.io/badge/docs-live-blue?logo=github)](https://gauravagarwalgarg.github.io/linux-scripts/) ![Shell](https://img.shields.io/badge/Shell-Bash-green?logo=gnubash&logoColor=white) [![License](https://img.shields.io/github/license/gauravagarwalgarg/linux-scripts)](https://github.com/gauravagarwalgarg/linux-scripts/blob/master/LICENSE)
+
+> 📖 **Documentation**: [https://gauravagarwalgarg.github.io/linux-scripts/](https://gauravagarwalgarg.github.io/linux-scripts/)
+>
+> 📦 **Repository**: [GitHub](https://github.com/gauravagarwalgarg/linux-scripts)
+
+
 > Post-install automation for Ubuntu LTS. From fresh install to production-ready workstation in one command.
 
 Scripts are Ubuntu-compatible (22.04 / 24.04 LTS). Docs cover the broader Linux landscape distro choices, WSL workflows, and role-specific tooling guides.
